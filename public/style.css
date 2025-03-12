@@ -1,0 +1,100 @@
+body {
+    background-color: #16111a;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.motivation-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #2d2039;
+    border-radius: 35px;
+    width: 450px;
+    height: 375px;
+    position: relative;
+}
+
+.motivation-text {
+    margin: 20px;
+    font-size: 27px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.advice-number {
+    color: #a638f6;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    bottom: 80px;
+    position:absolute;
+}
+
+.divider img {
+    width: 85%;
+}
+
+.quotes-symbol {
+    background-color: #a638f6;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -43px;
+    position: absolute;
+    box-shadow: 50px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s ease;
+}
+
+.quotes-symbol:hover{
+    box-shadow: 0 0 40px #a638f6;
+    cursor: pointer;
+}
+
+.logo{
+    margin-top: 70px;
+}
+
+@media (max-width: 600px) {
+    .content-container {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+    .motivation-box {
+        width: 350px;
+        height: 280px;
+    }
+    .motivation-text {
+        font-size: 15px;
+    }
+}
